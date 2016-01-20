@@ -13,7 +13,7 @@ except error:
 users = dict()
 hello = str(raw_input("Your name: "))
 socket.sendto("W%HelloRequest%W" + hello, ("192.168.0.255", 13196))
-
+# net block
 def receiver():
     while True:
         data, address = socket.recvfrom(555)
